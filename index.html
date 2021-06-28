@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form Example</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Questionnaire about Vegan/Vegetarian<h1>
+      <p id="description" class="description text-center">Survey about being Vegetarian or Vegan</p>        
+      </header>      
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name</label>
+          <input
+                 type="text"
+                 name="name"
+                 id="name"
+                 class="form-control"
+                 placeholder="Enter your name"
+                 required
+                />
+        </div>
+      <div class="form-group"> 
+        <label id="email-label" for="email">Email</label>
+          <input
+                 type="email"
+                 name="email"
+                 id="email"
+                 class="form-control"
+                 placeholder="Enter your email"
+                 required
+                 />
+      </div>
+        <div class="form-group">
+          <label id="number-label" for="age">Age</label>
+          <input 
+                 type="number" 
+                 name="age" 
+                 id="number" 
+                 min="10"
+                 max="99"
+                 class="Enter your age"
+                 placeholder="Age" />
+        </div>
+        <div class="form-group">
+          <p>Are you .. </p>
+          <select id="dropdown" name="diet" class="form-control" 
+                  required >
+        <option disabled selected value>Select your current diet</option>
+        <option value="vegan">Vegan</option>                                       <option value="vegetarian">Vegetarian</option>
+        <option value="semi-vegetarian">Semi-Vegetarian</option>
+        <option value="lacto-vegetarian">Lacto-Vegetarian(exception with eating/drinking dairy)</option>
+         <option value="ovo-vegetarian">Ovo-Vegetarian(exception with eating egg)</option>
+          </select>
+        </div>
+        
+        <div class="form-group"> 
+          <p>Why are you vegan/vegetarian?</p>
+          <label>
+            <input 
+                   type="radio"
+                   name="reason"
+                   value="health"
+                   class="input-radio"
+                   checked />Health</label> 
+          <label>
+            <input 
+                   type="radio"
+                   name="reason"
+                   value="animal rights/welfare"
+                   class="input-radio"
+                   checked />Animal Rights/Welfare</label>
+          <label>
+            <input 
+                   type="radio"
+                   name="reason"
+                   value="environmental"
+                   class="input-radio"
+                   checked />Environmental</label>
+        </div>
+        <div class="form-group"> 
+          <p>How long have you been vegan/vegetarian? </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="0-6 Months">0-6 Months</option>
+            <option value="1-2 Years">1-2 Years</option>
+            <option value="2-4 Years">2-4 Years</option>
+            <option value="5+ Years">5+ Years</option>
+          </select>
+          
+          <div class="form-group">
+            <p>Do you identify with any of the following religions?<span class="clue">(Check all that apply)</span></p>
+            <label> <input 
+                   type="checkbox"
+                   name="prefer"
+                   value="Christianity"
+                   class="input-checkbox" />Christianity</label>
+          <label> <input 
+                   type="checkbox"
+                   name="prefer"
+                   value="judaism"
+                   class="input-checkbox" />Judaism</label>
+        <label> <input 
+                   type="checkbox"
+                   name="prefer"
+                   value="islam"
+                   class="input-checkbox" />Islam</label>
+      <label> <input 
+                   type="checkbox"
+                   name="prefer"
+                   value="buddhism"
+                   class="input-checkbox" />Buddhism</label>
+    <label> <input 
+                   type="checkbox"
+                   name="prefer"
+                   value="hinduism"
+                   class="input-checkbox" />Hinduism</label>
+  <label> <input 
+                   type="checkbox"
+                   name="prefer"
+                   value="spiritual"
+                   class="input-checkbox" />Spiritual</label>
+<label> <input 
+                   type="checkbox"
+                   name="prefer"
+                   value="no-religion"
+                   class="input-checkbox" />No religion</label>
+<label> <input 
+                   type="checkbox"
+                   name="prefer"
+                   value="other"
+                   class="input-checkbox" />Other...</label>
+        </div>
+          <div class="form-group">
+            <p>Do you know what "low-fat vegan diet" means? If so, do you prefer that diet?</p>
+            <textarea
+                      id="comments"
+                      name="comment"
+                      class="input-textarea"
+                      placeholder="Enter your things about low-fat vegan diet..." ></textarea>
+            <div class="form-group">
+              <p>How many people have been inspired by you to go vegan/vegetarian? </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="1-2">1-2</option>
+            <option value="2-3">2-3</option>
+            <option value="3-4">3-4</option>
+            <option value="5+">5+</option>
+            <option value="0">0</option>
+          </select>
+            </div>
+            <div class="form-group"> 
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+              </button>
+            </div>
+      </form>
+  </div>
+<!-- partial -->
+  
+</body>
+</html>
